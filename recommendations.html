@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 内容安全策略：只允许加载本站资源（脚本 / 样式 / 图片 / 网络请求全部限定同源）。
+       唯一例外是 style-src 的 'unsafe-inline' —— 页面里用了 style="" 内联属性。 -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; frame-src 'none'">
+  <title>推荐 · 洛天依</title>
+  <meta name="description" content="站长私人的洛天依推荐歌单，附每首歌的推荐语。">
+  <meta name="theme-color" content="#66CCFF">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- 顶部固定导航：当前页为「推荐」 -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">♪</span>
+        <span class="brand-name">洛天依</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button"
+              aria-label="打开导航菜单" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">首页</a>
+        <a href="profile.html">简介</a>
+        <a href="works.html">代表作</a>
+        <a href="recommendations.html" class="active" aria-current="page">推荐</a>
+        <a href="history.html">经历</a>
+        <a href="about.html">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-head container">
+      <h1>我的推荐</h1>
+      <p>私人歌单，附上一点听后感</p>
+      <p class="head-deco" aria-hidden="true">✦ ♪ ✦</p>
+    </div>
+
+    <!-- ==================================================================
+         维护备注（不在页面上显示，改数据时看这里）
+
+         本页数据来自 _data/recommendations.json，由 js/main.js 渲染。
+         想加歌 / 改推荐语 / 换封面，编辑那个 JSON 就行，不用动 HTML。
+
+         改完请双击根目录的「更新推荐数据.bat」同步一次 ——
+         它会生成 _data/recommendations.js 镜像，让你直接双击网页时也能读到数据
+         （浏览器出于同源策略，禁止本地网页用 fetch 读取 JSON 文件）。
+         部署到服务器后，页面会优先直接读取 JSON，就不需要这一步了。
+         ================================================================== -->
+
+
+    <!-- ==================================================================
+         歌单容器
+         注意：id="recList" 是 main.js 的挂载点，class="rec-grid" 提供网格布局。
+              两者都不要删，否则推荐卡片渲染不出来。
+         ================================================================== -->
+    <section class="section container">
+      <div class="rec-grid" id="recList">
+        <p class="loading">正在加载歌单…</p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- 页脚（全站统一） -->
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="profile.html">简介</a>
+        <a href="works.html">代表作</a>
+        <a href="recommendations.html">推荐</a>
+        <a href="history.html">经历</a>
+        <a href="about.html">关于</a>
+      </nav>
+      <p class="footer-copy">
+        © <span id="year">2025</span> 洛天依非官方粉丝展示站 · 仅供学习与交流使用
+      </p>
+      <p class="footer-disclaimer">
+        免责声明：本站为非官方粉丝展示站，洛天依及相关版权归上海禾念及原作者所有。
+      </p>
+      <p class="footer-star" aria-hidden="true">✦ ♪ ✦</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

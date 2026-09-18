@@ -1,0 +1,75 @@
+{
+  "_说明": [
+    "推荐歌单数据文件。想加歌 / 删歌 / 改推荐语，只改这个文件就行，HTML 不用动。",
+    "",
+    "★ 改完后请双击网站根目录的「更新推荐数据.bat」同步一次。",
+    "  那一步会生成 _data/recommendations.js，让网页在直接双击打开时也能读到数据",
+    "  （浏览器出于同源策略，禁止本地网页用 fetch 读取 JSON 文件）。",
+    "  部署到服务器之后，页面会优先直接读取本 JSON，就不需要再同步了。",
+    "",
+    "字段含义：",
+    "  title  : 歌曲名（必填）",
+    "  credit : 原曲投稿账号，显示在歌名下方（可选，建议保留以便署名）",
+    "  cover  : 曲绘路径，已放在 images/ 下（必填，可换成你自己的图片）",
+    "  note   : 推荐语，显示在淡粉色引用框里（可选，留空则不显示）",
+    "  url    : B站视频链接（必填）",
+    "",
+    "顺序即显示顺序，第一首显示序号 01，以此类推。",
+    "注意：JSON 不支持注释，所以说明写在 _ 开头的字段里；不影响程序读取。",
+    "",
+    "版权提示：本文件的曲绘来自 B站对应作品页，版权归各原曲作者与曲绘作者所有，",
+    "         本站仅作非商业性展示。若要商用必须先取得授权。"
+  ],
+
+  "songs": [
+    {
+      "title": "人是猫",
+      "credit": "原曲：张卡斯",
+      "cover": "images/rec1.jpg",
+      "note": "喵喵~喵喵喵喵喵",
+      "url": "https://www.bilibili.com/video/BV1Bfjq6LEDi/"
+    },
+    {
+      "title": "反乌托邦 Pt.2",
+      "credit": "原曲：亚细亚旷世奇才",
+      "cover": "images/rec2.jpg",
+      "note": "第一版和第二版都好听喵",
+      "url": "https://www.bilibili.com/video/BV1epqZBVEPY/"
+    },
+    {
+      "title": "聘书",
+      "credit": "原曲：洛天依（官方账号）",
+      "cover": "images/rec3.jpg",
+      "note": "第一次听略感平淡，后来越听越有韵味",
+      "url": "https://www.bilibili.com/festival/ltyyxj2?bvid=BV1PP9CYBEg3"
+    },
+    {
+      "title": "蝴蝶",
+      "credit": "原曲：洛天依（官方账号）",
+      "cover": "images/rec4.jpg",
+      "note": "自动扣费20块",
+      "url": "https://www.bilibili.com/video/BV1A14Se6EHy/"
+    },
+    {
+      "title": "霜雪千年",
+      "credit": "原曲：COPY（洛天依 & 乐正绫）",
+      "cover": "images/rec5.jpg",
+      "note": "毋庸置疑，南北组无敌",
+      "url": "https://www.bilibili.com/video/BV1zM4m1r7JS/"
+    },
+    {
+      "title": "万分之一的光",
+      "credit": "原曲：洛天依（官方账号）",
+      "cover": "images/rec6.jpg",
+      "note": "学生时代的力量源泉之一",
+      "url": "https://www.bilibili.com/video/BV1Tp4y1S7cu/"
+    },
+    {
+      "title": "我的悲伤是水做的",
+      "credit": "原曲：YuH_ChiliChill",
+      "cover": "images/rec7.jpg",
+      "note": "歌词和旋律都很有ChiliChill的特点啊，诙谐可爱捏",
+      "url": "https://www.bilibili.com/video/BV1Qc411h7Ys/"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 内容安全策略：只允许加载本站资源（脚本 / 样式 / 图片 / 网络请求全部限定同源）。
+       唯一例外是 style-src 的 'unsafe-inline' —— 页面里用了 style="" 内联属性。 -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; frame-src 'none'">
+  <title>经历 · 洛天依</title>
+  <meta name="description" content="洛天依经历时间线：2012 出道、2013 首场演唱会、2016 登上湖南卫视、Vsinger Live 系列等。">
+  <meta name="theme-color" content="#66CCFF">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- 顶部固定导航：当前页为「经历」 -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">♪</span>
+        <span class="brand-name">洛天依</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button"
+              aria-label="打开导航菜单" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">首页</a>
+        <a href="profile.html">简介</a>
+        <a href="works.html">代表作</a>
+        <a href="recommendations.html">推荐</a>
+        <a href="history.html" class="active" aria-current="page">经历</a>
+        <a href="about.html">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-head container">
+      <h1>经历</h1>
+      <p>从 2012 年出发，一条时间线看完</p>
+      <p class="head-deco" aria-hidden="true">✦ ♪ ✦</p>
+    </div>
+
+    <!-- ==================================================================
+         维护备注（不在页面上显示）
+
+         下面的时间线目前是占位内容，只列了几个广为人知的节点。
+         具体年份、活动名称与场次请以官方公告为准。
+
+         要增删条目，直接复制整块 li.tl-item 元素即可（见下方结构说明）。
+         ================================================================== -->
+
+
+    <!-- ==================================================================
+         垂直时间线
+         结构：<li class="tl-item">
+                 <span class="tl-year">年份</span>
+                 <div class="tl-card"><h3>标题</h3><p>说明</p></div>
+               </li>
+         ================================================================== -->
+    <section class="section container">
+      <ol class="timeline">
+
+        <li class="tl-item">
+          <span class="tl-year">2012</span>
+          <div class="tl-card">
+            <h3>正式出道</h3>
+            <p>
+              7 月 12 日，洛天依作为中文虚拟歌手形象正式公开，
+              代表色定为天依蓝。从这一天起，她开始成为大量创作者共同的「声音」。
+            </p>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <span class="tl-year">2013</span>
+          <div class="tl-card">
+            <h3>首场演唱会</h3>
+            <p>
+              第一次以全息投影的形式站上真实舞台。
+              虚拟歌手开演唱会这件事在当时还很新鲜，
+              而它验证了一件重要的事：屏幕里的形象可以被搬到线下，和观众面对面。
+            </p>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <span class="tl-year">2015</span>
+          <div class="tl-card">
+            <h3>代表作密集涌现</h3>
+            <p>
+              这一年前后，《权御天下》《普通DISCO》《达拉崩吧》《九九八十一》等作品接连出现，
+              中文 Vocaloid 的创作热度被推到高点，也是很多人「入坑」的时间点。
+            </p>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <span class="tl-year">2016</span>
+          <div class="tl-card">
+            <h3>登上湖南卫视</h3>
+            <p>
+              虚拟歌手出现在主流电视晚会的舞台上，
+              让「虚拟歌手」这个品类第一次被更大范围的普通观众看到。
+            </p>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <span class="tl-year">2017 起</span>
+          <div class="tl-card">
+            <h3>Vsinger Live 系列</h3>
+            <p>
+              此后多年，Vsinger 家族持续举办线下演唱会与大型活动，
+              洛天依作为其中最具代表性的成员之一，多次登上舞台。
+              场次与城市请以官方公告为准。
+            </p>
+          </div>
+        </li>
+
+        <li class="tl-item">
+          <span class="tl-year">近年</span>
+          <div class="tl-card">
+            <h3>歌唱引擎的演进</h3>
+            <p>
+              从早期的 VOCALOID 到后来的 AI 歌声合成技术，
+              洛天依的声音表现力持续提升，也让创作者的调教门槛不断降低 ——
+              这对整个同人创作生态来说，是比任何单曲都更重要的事。
+            </p>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
+  </main>
+
+
+  <!-- 页脚（全站统一） -->
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="profile.html">简介</a>
+        <a href="works.html">代表作</a>
+        <a href="recommendations.html">推荐</a>
+        <a href="history.html">经历</a>
+        <a href="about.html">关于</a>
+      </nav>
+      <p class="footer-copy">
+        © <span id="year">2025</span> 洛天依非官方粉丝展示站 · 仅供学习与交流使用
+      </p>
+      <p class="footer-disclaimer">
+        免责声明：本站为非官方粉丝展示站，洛天依及相关版权归上海禾念及原作者所有。
+      </p>
+      <p class="footer-star" aria-hidden="true">✦ ♪ ✦</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 内容安全策略：只允许加载本站资源（脚本 / 样式 / 图片 / 网络请求全部限定同源）。
+       唯一例外是 style-src 的 'unsafe-inline' —— 页面里用了 style="" 内联属性。 -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'; frame-src 'none'">
+  <title>洛天依 · 天依蓝的歌声</title>
+  <meta name="description" content="洛天依非官方粉丝展示站 —— 中国虚拟歌手洛天依的简介、代表作、推荐歌曲与经历。">
+  <meta name="theme-color" content="#66CCFF">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ======================================================================
+       顶部固定导航栏（全站统一，仅 active 类的位置不同）
+       ====================================================================== -->
+  <header class="nav">
+    <div class="nav-inner">
+
+      <a class="brand" href="index.html">
+        <span class="brand-mark">♪</span>
+        <span class="brand-name">洛天依</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button"
+              aria-label="打开导航菜单" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <!-- 当前页 = index.html，故此项高亮 -->
+        <a href="index.html" class="active" aria-current="page">首页</a>
+        <a href="profile.html">简介</a>
+        <a href="works.html">代表作</a>
+        <a href="recommendations.html">推荐</a>
+        <a href="history.html">经历</a>
+        <a href="about.html">关于</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ====================================================================
+         Hero：左侧立绘，右侧文字（移动端自动改为上下排列）
+         ==================================================================== -->
+    <section class="hero container">
+
+      <!-- 立绘区 -->
+      <div class="hero-visual">
+        <!-- 装饰用的星星与音符（纯装饰，可整组删除） -->
+        <span class="deco d1" aria-hidden="true">✦</span>
+        <span class="deco d2 pink" aria-hidden="true">♪</span>
+        <span class="deco d3" aria-hidden="true">✧</span>
+        <span class="deco d4 pink" aria-hidden="true">★</span>
+
+        <!-- 立绘图。换图时请沿用这个文件名（images/tianyi.jpg），
+             尺寸建议 680×1360 左右 —— 页面上最大显示 340px 宽，
+             680px 刚好覆盖 2 倍屏，再大只是白白增加体积。 -->
+        <img class="hero-avatar"
+             src="images/tianyi.jpg"
+             alt="洛天依立绘">
+      </div>
+
+      <!-- 文字区 -->
+      <div class="hero-text">
+        <h1 class="hero-name">洛天依</h1>
+
+        <p class="hero-tagline">中国虚拟歌手，Vsinger 旗下，代表色天依蓝</p>
+
+        <ul class="tags">
+          <li class="tag">虚拟歌手</li>
+          <li class="tag">Vsinger</li>
+          <li class="tag tag-pink">天依蓝</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a class="btn" href="works.html">看看代表作</a>
+          <a class="btn btn-outline" href="recommendations.html">我的推荐</a>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ====================================================================
+         5 个模块卡片：简介 / 代表作 / 推荐 / 经历 / 关于
+         ==================================================================== -->
+    <section class="section container">
+      <div class="section-head">
+        <h2 class="section-title">站内导航</h2>
+        <p class="section-sub">从这五个入口认识天依</p>
+      </div>
+
+      <div class="module-grid">
+
+        <a class="module-card" href="profile.html">
+          <span class="module-icon" aria-hidden="true">♫</span>
+          <h3>简介</h3>
+          <p>基本资料、形象设定，以及代表色「天依蓝」的由来。</p>
+          <span class="module-more">查看</span>
+        </a>
+
+        <a class="module-card" href="works.html">
+          <span class="module-icon" aria-hidden="true">★</span>
+          <h3>代表作</h3>
+          <p>那些让天依被记住的歌，一首一首列出来。</p>
+          <span class="module-more">查看</span>
+        </a>
+
+        <a class="module-card" href="recommendations.html">
+          <span class="module-icon" aria-hidden="true">♪</span>
+          <h3>推荐</h3>
+          <p>站长的私人歌单，附上每首歌的推荐语。</p>
+          <span class="module-more">查看</span>
+        </a>
+
+        <a class="module-card" href="history.html">
+          <span class="module-icon" aria-hidden="true">✧</span>
+          <h3>经历</h3>
+          <p>从 2012 年出道至今，一条时间线看完。</p>
+          <span class="module-more">查看</span>
+        </a>
+
+        <a class="module-card" href="about.html">
+          <span class="module-icon" aria-hidden="true">❋</span>
+          <h3>关于</h3>
+          <p>版权说明、免责声明与官方入口。</p>
+          <span class="module-more">查看</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ======================================================================
+       页脚（全站统一）
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+
+      <nav class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="profile.html">简介</a>
+        <a href="works.html">代表作</a>
+        <a href="recommendations.html">推荐</a>
+        <a href="history.html">经历</a>
+        <a href="about.html">关于</a>
+      </nav>
+
+      <p class="footer-copy">
+        © <span id="year">2025</span> 洛天依非官方粉丝展示站 · 仅供学习与交流使用
+      </p>
+
+      <!-- 免责声明：全站统一文案，请勿删除 -->
+      <p class="footer-disclaimer">
+        免责声明：本站为非官方粉丝展示站，洛天依及相关版权归上海禾念及原作者所有。
+      </p>
+
+      <p class="footer-star" aria-hidden="true">✦ ♪ ✦</p>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
